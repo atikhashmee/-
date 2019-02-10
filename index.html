@@ -1,0 +1,284 @@
+
+ 
+
+
+
+        <!doctype html>
+        <html lang="en">
+          <head>
+            <title>Personal website</title>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+              <style>
+                @import url('https://fonts.googleapis.com/css?family=Crete+Round');
+                @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+                @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+                *{
+                   box-sizing: border-box;
+                   font-family: 'Kaushan Script', cursive;
+                }
+                  .container-fluid{
+                      position: relative;
+                      height: 100vh;
+                      background-color: #1fb3ec;
+                  }
+                  .menu-content-wrapper{
+                       position: relative;
+                      width: 100%;
+                      height: 100%;
+                      background-color:#1AAFE7;
+
+                      
+                  }
+                  .row>.col{
+                    height: 100vh;
+                  }
+                  .protfolio,.blog,.resume,.skills{
+                    position: absolute;
+                    height: 150px;
+                    width: 150px;
+                    border: 2px solid gray;
+                    cursor: pointer;
+                    box-shadow: 5px 10px #f1a5a5:
+                    
+                  }
+                  .protfolio{
+                    top: 20px;
+                    left: 40%;
+                    background-color: rgb(245, 251, 191);
+                     transform: rotate(10deg);
+                     position: relative;
+                   
+                  }
+                  .protfolio::before{
+                     content: url("pin.png");
+                     position: absolute;
+                     left: 10px;
+                  }
+                  .blog{
+                     right: 0;
+                     top: 40%;
+                     background-color: rgb(247, 232, 146);
+                     transform: rotate(-10deg);
+                  }
+                  .blog::before{
+                    content: url("pin.png");
+                     position: absolute;
+                     left: 5px;
+                     top: -5px;
+                     transform: skew(10deg);
+                  }
+                  .resume{
+                    top: 40%;
+                    left: 10px;
+                    background-color: rgb(209, 255, 136);
+                    transform: rotate(10deg);
+                  }
+                   .resume::before{
+                        content: url(pin.png);
+                        position: absolute;
+                        left: 0px;
+                        top: -21px;
+                        transform: skew(10deg);
+                   }
+                  .skills{
+                    top:70%;
+                    left: 40%;
+                    background-color: rgb(155, 245, 114);
+                    transform: rotate(-20deg);
+                  }
+                  .skills::before{
+                       content: url(pin.png);
+                        position: absolute;
+                        right: -18px;
+                        top: -25px;
+                        transform: skew(10deg);
+                  }
+                  .content-topper{
+                    
+                      height: inherit;
+                      width: inherit;
+                      padding: 52px;
+                     
+                  }
+                  .content-topper>h1{
+                      font-family: 'Kaushan Script', cursive;
+                      font-size: 26px;
+                  }
+                  .modal{
+                    top: 92px;
+                    transform: rotate(-10deg);
+                  
+                  }
+                  .close{
+                    opacity: 1;
+                  }
+                  .closetag{
+                    font-size: 30px;
+                    color: red;
+                    position: relative;
+                  }
+                  .closetag::after{
+                    position: absolute;
+                    content: url(croxx.png);
+                    image-rendering: auto;
+                    top: -13px;
+                    right: -14px;
+                    z-index: 999;
+                    
+                  }
+                  .modal-content{
+                    width: 890px;
+                    
+                  }
+                  .main-image-information-container{
+                        height: 100%;
+                        width: 100%;
+                        background: rgb(9, 62, 82);
+                  }
+                  .text-container{
+                    height: 100%;
+                    color: white;
+                    font-family: 'Crete Round', serif;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                  }
+                  .text-container>h1{
+                    font-size: 23px;
+                    display: block;
+                    position: relative;
+                  }
+                  .text-container>h1::after{
+                     content: "";
+                     position: absolute;
+                     border-bottom: 3px solid #fff;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                  }
+                  .text-container>p{
+                    font-family: 'Major Mono Display', monospace;
+                  }
+              </style>
+          </head>
+          <body>
+
+                    <div class="container-fluid">
+                          <div class="row">
+                             <div class="col">
+                                    <div class="main-image-information-container">
+                                      <div class="row">
+                                          <div class="col"></div>
+                                          <div class="col" style="height:100vh;">
+                                               <div class="text-container">
+                                                   <h1>Atik Ullah (Atik Bin Hashmee)</h1>
+                                                    <p> --Coder</p>
+                                                    <p>Atikhashmee6235@gmail.com</p>
+                                                    <p>+88-01735-623513</p>
+                                               </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                             </div>
+                             <div class="col">
+                                 <div class="menu-content-wrapper">
+                                      
+                                            <div class="protfolio">
+                                                <div class="content-topper" data-toggle="modal" data-target="#protfolioid">
+                                                    <h1> Protfolio </h1>
+                                                </div>
+                                                
+                                            </div>
+                                              <div class="blog">
+                                                <div class="content-topper">
+                                                  <h1> Blog </h1>
+                                                </div>
+                                              </div>
+                                             <div class="resume">
+                                                <div class="content-topper" data-toggle="modal" data-target="#resume">
+                                                  <h1> Resume </h1>
+                                                </div>
+                                             </div>
+                                             <div class="skills">
+                                                <div class="content-topper">
+                                                  <h1> Skills </h1>
+                                                </div>
+                                             </div>
+                                      
+                                 </div>
+                             </div>
+                          </div>
+
+                         
+                          
+                          <!-- Modal  for the protfolio protfolioid-->
+                        <div class="modal" id="protfolioid" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                        
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span class="closetag" aria-hidden="true"></span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                       <h1>Project 1</h1>
+                                       <p>
+                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis nesciunt odio fugit quidem ullam ipsa maiores asperiores sit enim neque delectus placeat aspernatur modi, vel cum quaerat corrupti accusamus.
+                                       </p>
+                                       <h1>Project 1</h1>
+                                       <p>
+                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis nesciunt odio fugit quidem ullam ipsa maiores asperiores sit enim neque delectus placeat aspernatur modi, vel cum quaerat corrupti accusamus.
+                                       </p>
+                                       <h1>Project 1</h1>
+                                       <p>
+                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis nesciunt odio fugit quidem ullam ipsa maiores asperiores sit enim neque delectus placeat aspernatur modi, vel cum quaerat corrupti accusamus.
+                                       </p>
+                              
+                                </div>
+                        
+                            </div>
+                          </div>
+                        </div>
+                          <!-- end  for the protfolio-->
+
+
+                          <!-- Modal  for the resume-->
+                          <div class="modal" id="resume" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="closetag" aria-hidden="true"></span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                <iframe width="100%"  height="900px"
+                                  src="https://docs.google.com/document/d/e/2PACX-1vRqAs5gQ_OlbgOVOHH7fb2rhJSy_IND-gsiZI0YM1_ruKNjFX049gvQ8__42IVp3srnQ9YYU3gQsgoR/pub?embedded=true"></iframe>
+                                </div>
+                               
+                              </div>
+                            </div>
+                          </div>
+                          <!-- end  for the resume-->
+                    </div>
+              
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+          </body>
+        </html>
+
+
+   
+
